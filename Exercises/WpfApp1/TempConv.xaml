@@ -1,0 +1,26 @@
+﻿<Window x:Class="WpfApp1.TempConv"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="TempConv" Height="450" Width="800">
+    <Grid>
+        <Label Content="Input" Name="input" HorizontalAlignment="Left" Height="50" Margin="300,55,0,0" VerticalAlignment="Top" Width="119"/>
+        <Label Content="Input Scale" Name="inputScale" HorizontalAlignment="Left" Height="50" Margin="50,150,0,0" VerticalAlignment="Top" Width="119"/>
+        <Label Content="Output Scale" Name="outputScale" HorizontalAlignment="Left" Height="50" Margin="550,150,0,0" VerticalAlignment="Top" Width="119"/>
+        <Label Content="Output" Name="output" HorizontalAlignment="Left" Height="50" Margin="300,356,0,0" VerticalAlignment="Top" Width="119"/>
+        
+        <RadioButton Content="Celcius" Name="rbtnInputCelcius" HorizontalAlignment="Left" Height="25" Margin="50,205,0,0" VerticalAlignment="Top" Width="119" Checked="rbtn_Checked"/>
+        <RadioButton Content="Farenheit" Name="rbtnInputFarenheit" HorizontalAlignment="Left" Height="25" Margin="50,257,0,0" VerticalAlignment="Top" Width="107" Checked="rbtn_Checked"/>
+        <RadioButton Content="Kelvin" Name="rbtnInputKelvin" HorizontalAlignment="Left" Height="15" Margin="50,306,0,0" VerticalAlignment="Top" Width="107" Checked="rbtn_Checked"/>
+        <RadioButton Content="Celcius" Name="rbtnOutputCelcius" HorizontalAlignment="Left" Height="19" Margin="550,230,0,0" VerticalAlignment="Top" Width="119" Checked="rbtn_Checked"/>
+        <RadioButton Content="Farenheit" Name="rbtnOutputFarenheit" HorizontalAlignment="Left" Height="20" Margin="550,282,0,0" VerticalAlignment="Top" Width="119" Checked="rbtn_Checked"/>
+        <RadioButton Content="Kelvin" Name="rbtnOutputKelvin" HorizontalAlignment="Left" Height="26" Margin="550,321,0,0" VerticalAlignment="Top" Width="119" Checked="rbtn_Checked"/>
+        <TextBlock Name="lblInput" HorizontalAlignment="Left" Height="50" Margin="524,55,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="106" Opacity="0.5"/>
+        <TextBlock Name="lblResult" HorizontalAlignment="Left" Height="29" Margin="517,377,0,0" TextWrapping="Wrap" Text="..." VerticalAlignment="Top" Width="137"/>
+
+
+    </Grid>
+</Window>
